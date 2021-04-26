@@ -141,22 +141,6 @@ const useStyles = makeStyles((theme) => ({
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      {/* <MenuItem>
-        <IconButton aria-label="show 4 new mails" color="white">
-          <QuestionAnswerIcon badgeContent={4} color="white">
-            <MailIcon />
-          </QuestionAnswerIcon>
-        </IconButton>
-        <p>Messages</p>
-      </MenuItem> */}
-      {/* <MenuItem>
-        <IconButton aria-label="show 11 new notifications" color="inherit">
-          <Badge badgeContent={11} color="secondary">
-            <NotificationsIcon />
-          </Badge>
-        </IconButton>
-        <p>Notifications</p>
-      </MenuItem> */}
       <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
           aria-label="account of current user"
@@ -176,21 +160,15 @@ const useStyles = makeStyles((theme) => ({
       <AppBar position="static"  className={classes.grow}>
         <Toolbar>
         <IconButton
-            // edge="start"
-            // className={classes.menuButton}
             color="inherit"
-            // aria-label="open drawer"
           >
             <BallotIcon />
             <Typography style={{position:'relative', left:'8%'}}>
             Feed
           </Typography>
             </IconButton>
-            <IconButton
-            // edge="start"
-            // className={classes.menuButton}
-            color="inherit"
-            // aria-label="open drawer"
+            <IconButton  
+            color="inherit"  
           >
             <LanguageIcon />
             <Typography style={{position:'relative', left:'4%'}}>
@@ -218,14 +196,8 @@ const useStyles = makeStyles((theme) => ({
           <div className={classes.sectionDesktop}>
             <IconButton>
               <QuestionAnswerIcon badgeContent={4} style={{color:'white'}}>
-                {/* <MailIcon /> */}
               </QuestionAnswerIcon>
             </IconButton>
-            {/* <IconButton aria-label="show 17 new notifications" color="inherit">
-              <Badge badgeContent={17} color="secondary">
-                <NotificationsIcon />
-              </Badge>
-            </IconButton> */}
             <IconButton
               edge="end"
               aria-label="account of current user"

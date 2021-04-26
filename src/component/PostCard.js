@@ -104,7 +104,7 @@ const PostCard = () => {
                onClose={handleClose}
                aria-labelledby="simple-modal-title"
                aria-describedby="simple-modal-description"
-               style={{ margin: '100px 8px 0 470px' }}>
+               style={{ margin: '100px 8px 0 470px', postion:'relative', left:'-5%' }}>
               <ModalCard  parentCallback = {handleClose}/>
              </Modal> 
             </>
